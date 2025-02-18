@@ -1,5 +1,13 @@
 # Omakase Ruby styling for Rails
-inherit_gem: { rubocop-rails-omakase: rubocop.yml }
+inherit_gem:
+  rubocop-rails-omakase: rubocop.yml
+
+plugins:
+  - rubocop-performance
+  - rubocop-rails
+  - rubocop-minitest
+
+require: []  # This overrides the old requires
 
 # Overwrite or add rules to create your own house style
 #
