@@ -1,3 +1,4 @@
+# .rubocop.yml
 # Disable the inherited requires
 require: []
 
@@ -7,6 +8,6 @@ plugins:
   - rubocop-rails
   - rubocop-minitest
 
-# Inherit rules but override the loading mechanism
-inherit_gem:
-  rubocop-rails-omakase: rubocop.yml
+# Inherit rules from the omakase configuration
+inherit_from:
+  - .rubocop_omakase.yml
